@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Brixton ;
+  padding: 10px;
+  background-image: url(picture/pic_flora.png) ;
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+header {
+    background-color: #A6B8E5;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+.logo {
+    width: 120px;  margin-right: 50px;  
+    text-align: right;
+}
+
+body {
+    background-image: url(Picture/sea\ bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: #ffb9b6;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+footer {
+    background-color: #A6B8E5;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+
+.image-text {
+    text-align: center;
+    margin: 0 auto;  
+  }
+
+</style>
+</head>
+<body>
+    <header>  <img src="Picture/marang logo.jpg" alt="Logo" class="logo"> </header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Culture</a>
+        <div class="dropdown-content">
+          <a href="boatbuilding.html">Boat Building</a>
+          <a href="weaving.html">Weaving Craft</a>
+          <a href="kitefly.html">Kitefly</a>
+          <a href="handicraft.html">Handicraft</a>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Attractions</a>
+        <div class="dropdown-content">
+          <a href="pulaukapas.html">Pulau Kapas</a>
+          <a href="rivercruise.html">Marang River Cruise</a>
+          <a href="lubukbatu.html">Bukit Lubuk Batu</a>
+      <li><a href="food.html">Foods</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Fishing Industry</a>
+        <div class="dropdown-content">
+          <a href="traditional.html">Traditional Fishing Methods</a>
+          <a href="modern.html">Modern Development</a>
+          <a href="fish.html">Commonly Caught Fish Species</a>
+      <li><a href="accomodation.html">Accomodation</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+        </div>
+      </li>
+    </ul>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>BOAT BUILDING</h2>
+          <img src="Picture/boatbuild.jpg" alt="pic_boat" height="500px" width="1005px" class="center">
+          <p>The people of Terengganu have a long history of excellence in boat building.  And we're not merely referring to the boats that our fishermen use; this area has also produced custom-built wooden vessels capable of traversing the open sea. Individuals from all around the globe have been known to buy boats from our boat builders. Yachts and boating aficionados from around the globe have taken notice of the Terengganu boat builders' exceptional talent and attention to detail.</p>
+          <p>Because they work entirely from memory and experience, these boat builders' abilities are highly sought after for their painstaking attention to detail. Unfortunately, the number of traditional boat builders who do not use blueprints is rapidly decreasing, as previously stated.</p>
+          <p>Making use of premium woods, specifically cengal wood, the supply of which has been known to cause order delays in the past. These boat builders will not settle for anything less than the best because their career is fashioned by craftsmanship and honesty.</p>
+        </div>
+        
+        <footer>
+          <p>Copyright &copy; 2024 Marang Fishing Villages<p>
+          <p>All Rights Reserved.</p>
+          <p>Last Update 12th July 2024.</p>
+        </footer> 
+
+</body>
+</html>
